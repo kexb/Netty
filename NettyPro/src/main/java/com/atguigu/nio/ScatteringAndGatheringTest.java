@@ -42,7 +42,7 @@ public class ScatteringAndGatheringTest {
                 Arrays.asList(byteBuffers).stream().map(buffer -> "postion=" + buffer.position() + ", limit=" + buffer.limit()).forEach(System.out::println);
             }
 
-            //将所有的buffer进行flip
+            //将所有的buffer进行flip翻转
             Arrays.asList(byteBuffers).forEach(buffer -> buffer.flip());
 
             //将数据读出显示到客户端
