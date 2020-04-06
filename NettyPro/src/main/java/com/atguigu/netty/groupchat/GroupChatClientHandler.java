@@ -6,6 +6,6 @@ import io.netty.channel.SimpleChannelInboundHandler;
 public class GroupChatClientHandler extends SimpleChannelInboundHandler<String> {
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
-        System.out.println(msg.trim());
+        System.out.println("[c]:\t"+msg.trim());
     }
 }
